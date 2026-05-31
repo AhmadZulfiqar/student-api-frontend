@@ -1,0 +1,139 @@
+/* App.css */
+
+/* 1. The Parent: Centers everything in the middle of the screen */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;             /* Enable Flexbox */
+  justify-content: center;    /* Center horizontally */
+  align-items: center;        /* Center vertically */
+  min-height: 100vh;          /* Take full height of browser */
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* 2. The Center Box: This is your white "card" */
+.form-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;        /* Rounded corners */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Deep shadow for floating effect */
+  width: 90%;                 /* Responsive width */
+  max-width: 400px;           /* Maximum width */
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* 3. The Inputs: Spacing inside the box */
+.input-group {
+  margin-bottom: 18px;
+  text-align: left;           /* Ensure labels stay left */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+  font-size: 0.85rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  box-sizing: border-box;     /* Keeps padding from breaking width */
+}
+/* Container to match your Form background */
+.view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* The Center Box for the List */
+.list-box {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto; /* Scrollable if list is long */
+}
+
+.add-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Individual Student Row */
+.student-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.student-card:hover {
+  background: #f9f9f9;
+}
+
+.info h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.info p {
+  margin: 5px 0 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.info span {
+  font-weight: bold;
+  color: #667eea;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  background: #ffc107;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.del-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.no-data {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+}
